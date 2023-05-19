@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Alohaware.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Entity.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
