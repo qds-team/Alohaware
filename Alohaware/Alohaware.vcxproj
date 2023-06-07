@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -19,10 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\ComponentManager.cpp" />
+    <ClCompile Include="Source\EntityManager.cpp" />
     <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\SystemManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Component.hpp" />
+    <ClInclude Include="Source\ComponentManager.hpp" />
     <ClInclude Include="Source\Entity.hpp" />
+    <ClInclude Include="Source\EntityManager.hpp" />
+    <ClInclude Include="Source\System.hpp" />
+    <ClInclude Include="Source\SystemManager.hpp" />
+    <ClInclude Include="Source\SystemRegistry.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

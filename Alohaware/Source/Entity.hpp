@@ -3,11 +3,14 @@
  * @brief		Entitiy Definition
 !*/
 
+
 #pragma once
 
-#include <limits>
+#include "Component.hpp"
+#include <bitset>
 
+using Entity = std::uint32_t;
 
-using Entity = long;
+constexpr Entity MaxEntities = 5000;
 
-constexpr Entity MaxEntities = std::numeric_limits<Entity>::max();
+using Signature = std::bitset<MaxEntities>;

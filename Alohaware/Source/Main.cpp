@@ -1,4 +1,5 @@
 #include <iostream>
+#include "EntityManager.hpp"
 
 
 int main()

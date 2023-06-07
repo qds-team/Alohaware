@@ -13,15 +13,72 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\ECS">
+      <UniqueIdentifier>{2a961630-e71a-478c-8721-e803f137a55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{13e7cacb-abd7-4507-9877-9cef8945b16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{4cf0f663-c5b6-4a25-8a8a-df2bb3a20956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SystemFiles">
+      <UniqueIdentifier>{5b8e8009-aa76-4614-a405-4fefa329cc71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SystemFiles\SystemRegistry">
+      <UniqueIdentifier>{a622ac6e-a543-489e-baca-33b94a92d024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SystemFiles\Systems">
+      <UniqueIdentifier>{469451f9-2933-41e8-8247-a74de10827b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Managers">
+      <UniqueIdentifier>{76152d41-b083-432f-a8b9-e172d65e1542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Managers\ComponentManager">
+      <UniqueIdentifier>{506d3417-c434-4918-8c61-cb1e34808930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Managers\EntityManager">
+      <UniqueIdentifier>{ef05068b-80d6-4936-a84e-7459cb47ee71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Managers\SystemManager">
+      <UniqueIdentifier>{e1fc7541-385b-4238-aa44-78a4d8a561f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\System.hpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity.hpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component.hpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SystemRegistry.hpp">
+      <Filter>Source Files\SystemFiles\SystemRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EntityManager.hpp">
+      <Filter>Source Files\ECS\Managers\EntityManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ComponentManager.hpp">
+      <Filter>Source Files\ECS\Managers\ComponentManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SystemManager.hpp">
+      <Filter>Source Files\ECS\Managers\SystemManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Main</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Source\Entity.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
+    <ClCompile Include="Source\EntityManager.cpp">
+      <Filter>Source Files\ECS\Managers\EntityManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ComponentManager.cpp">
+      <Filter>Source Files\ECS\Managers\ComponentManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SystemManager.cpp">
+      <Filter>Source Files\ECS\Managers\SystemManager</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
