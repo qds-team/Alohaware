@@ -43,6 +43,9 @@
     <Filter Include="Source Files\ECS\Managers\SystemManager">
       <UniqueIdentifier>{e1fc7541-385b-4238-aa44-78a4d8a561f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ECS\Coordinator">
+      <UniqueIdentifier>{a31005ad-761c-495a-82cc-05432b597b00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\System.hpp">
@@ -66,6 +69,9 @@
     <ClInclude Include="Source\SystemManager.hpp">
       <Filter>Source Files\ECS\Managers\SystemManager</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Coordinator.hpp">
+      <Filter>Source Files\ECS\Coordinator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp">
@@ -79,6 +85,9 @@
     </ClCompile>
     <ClCompile Include="Source\SystemManager.cpp">
       <Filter>Source Files\ECS\Managers\SystemManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Coordinator.cpp">
+      <Filter>Source Files\ECS\Coordinator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -32,6 +32,7 @@ class ComponentArray : public IComponentArray
 
 		void EntityDestroyed(Entity entity) override;
 
+
 	private:
 		// The packed array of components (of generic type T),
 		// set to a specified maximum amount, matching the maximum number

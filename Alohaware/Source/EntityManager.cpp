@@ -38,6 +38,10 @@ void EntityManager::DestroyEntity(Entity& entity)
 {
 	assert(aliveEntities < MaxEntities && "Entity out of range");
 
+	signatures[entity].reset();
+
+	availableEntities.push(entity);
+	--aliveEntities;
 }
 
 
