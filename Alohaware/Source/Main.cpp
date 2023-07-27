@@ -1,13 +1,17 @@
 #include <iostream>
-#include <chrono>
+//#include <chrono>
 #include "Coordinator.hpp"
+#include "Registry.hpp"
+#include "Logger.hpp"
 
 #pragma once
 
 
 int main()
 {
-	std::cout << "Hello World!" << std::endl;
+	Coordinator coordinator;
+	coordinator.Initialize();
+	coordinator.RegisterComponent<Logger>();
 
 	return 0;
 

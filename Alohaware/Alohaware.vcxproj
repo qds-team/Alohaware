@@ -19,11 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\ComponentManager.cpp" />
-    <ClCompile Include="Source\Coordinator.cpp" />
-    <ClCompile Include="Source\EntityManager.cpp" />
     <ClCompile Include="Source\Main.cpp" />
-    <ClCompile Include="Source\SystemManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Component.hpp" />
@@ -31,9 +27,13 @@
     <ClInclude Include="Source\Coordinator.hpp" />
     <ClInclude Include="Source\Entity.hpp" />
     <ClInclude Include="Source\EntityManager.hpp" />
+    <ClInclude Include="Source\Logger.hpp" />
+    <ClInclude Include="Source\PhysicsSystem.hpp" />
+    <ClInclude Include="Source\Rigidbody.hpp" />
     <ClInclude Include="Source\System.hpp" />
     <ClInclude Include="Source\SystemManager.hpp" />
-    <ClInclude Include="Source\SystemRegistry.hpp" />
+    <ClInclude Include="Source\Registry.hpp" />
+    <ClInclude Include="Source\Transform.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

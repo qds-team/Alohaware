@@ -19,18 +19,6 @@
     <Filter Include="Source Files\Main">
       <UniqueIdentifier>{13e7cacb-abd7-4507-9877-9cef8945b16b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Components">
-      <UniqueIdentifier>{4cf0f663-c5b6-4a25-8a8a-df2bb3a20956}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\SystemFiles">
-      <UniqueIdentifier>{5b8e8009-aa76-4614-a405-4fefa329cc71}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\SystemFiles\SystemRegistry">
-      <UniqueIdentifier>{a622ac6e-a543-489e-baca-33b94a92d024}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\SystemFiles\Systems">
-      <UniqueIdentifier>{469451f9-2933-41e8-8247-a74de10827b3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ECS\Managers">
       <UniqueIdentifier>{76152d41-b083-432f-a8b9-e172d65e1542}</UniqueIdentifier>
     </Filter>
@@ -43,23 +31,23 @@
     <Filter Include="Source Files\ECS\Managers\SystemManager">
       <UniqueIdentifier>{e1fc7541-385b-4238-aa44-78a4d8a561f0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\ECS\Coordinator">
+    <Filter Include="Source Files\ECS\ECS">
+      <UniqueIdentifier>{0fc42f7c-12b5-4f1b-8602-38750bf83ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{23a9781f-cac2-4192-b308-c3aecdfe502a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Managers\Coordinator">
       <UniqueIdentifier>{a31005ad-761c-495a-82cc-05432b597b00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Registry">
+      <UniqueIdentifier>{d3e5233b-1d96-4f2d-bb60-4c5694463841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{5b8e8009-aa76-4614-a405-4fefa329cc71}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\System.hpp">
-      <Filter>Source Files\ECS</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Entity.hpp">
-      <Filter>Source Files\ECS</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Component.hpp">
-      <Filter>Source Files\ECS</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\SystemRegistry.hpp">
-      <Filter>Source Files\SystemFiles\SystemRegistry</Filter>
-    </ClInclude>
     <ClInclude Include="Source\EntityManager.hpp">
       <Filter>Source Files\ECS\Managers\EntityManager</Filter>
     </ClInclude>
@@ -70,24 +58,36 @@
       <Filter>Source Files\ECS\Managers\SystemManager</Filter>
     </ClInclude>
     <ClInclude Include="Source\Coordinator.hpp">
-      <Filter>Source Files\ECS\Coordinator</Filter>
+      <Filter>Source Files\ECS\Managers\Coordinator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component.hpp">
+      <Filter>Source Files\ECS\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity.hpp">
+      <Filter>Source Files\ECS\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System.hpp">
+      <Filter>Source Files\ECS\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logger.hpp">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Registry.hpp">
+      <Filter>Source Files\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Rigidbody.hpp">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Transform.hpp">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PhysicsSystem.hpp">
+      <Filter>Source Files\Systems</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp">
       <Filter>Source Files\Main</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\EntityManager.cpp">
-      <Filter>Source Files\ECS\Managers\EntityManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\ComponentManager.cpp">
-      <Filter>Source Files\ECS\Managers\ComponentManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\SystemManager.cpp">
-      <Filter>Source Files\ECS\Managers\SystemManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Coordinator.cpp">
-      <Filter>Source Files\ECS\Coordinator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
