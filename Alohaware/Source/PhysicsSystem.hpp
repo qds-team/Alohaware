@@ -3,12 +3,12 @@
 
 #pragma once
 
-class PhysicsSystem : System
+class PhysicsSystem : public System
 {
 	public:
 		void Initialize();
 
-		virtual void Update(float dt);
+		void Update(float dt);
 
-		virtual void Shutdown();
+		void Shutdown();
 };

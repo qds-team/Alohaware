@@ -21,13 +21,12 @@ void RegisterComponents(Coordinator& coordinator)
 	coordinator.RegisterComponent<Logger>();
 	coordinator.RegisterComponent<Rigidbody>();
 	coordinator.RegisterComponent<Transform>();
-
 }
 
 // System Registry
 void RegisterSystems(Coordinator& coordinator)
 {
-	auto systemPointer = coordinator.RegisterSystem<System>();
+	auto systemPointer = coordinator.RegisterSystem<PhysicsSystem>();
 }
 
 // Registers all necessary Components and Systems

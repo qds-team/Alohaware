@@ -9,6 +9,7 @@
 #include <iostream>
 #include <unordered_map>
 #include "System.hpp"
+#include <functional>
 
 
 class SystemManager
@@ -50,7 +51,7 @@ class SystemManager
 			}
 		}
 
-		void EntitySignatureChanged(Entity entity, Signature entitySignature)
+		inline void EntitySignatureChanged(Entity entity, Signature entitySignature)
 		{
 			// Notify each system that an entity's signature changed
 			for (auto const& pair : systems)
@@ -72,12 +73,11 @@ class SystemManager
 			}
 		}
 
-		std::unordered_map<const char*, std::shared_ptr<System>> getSystems()
+		inline std::unordered_map<const char*, std::shared_ptr<System>> GetSystems()
 		{
 			return systems;
 		}
-
-
+		
 	private:
 		// Map from system type string pointer to a signature
 		std::unordered_map<const char*, Signature> signatures{};

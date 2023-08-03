@@ -9,7 +9,7 @@
 #include <unordered_map>
 #include "Component.hpp"
 #include "Entity.hpp"
-#include <cassert>  
+#include <cassert>
 
 class IComponentArray
 {
@@ -22,7 +22,6 @@ template<typename T>
 class ComponentArray : public IComponentArray
 {
 	public:
-		template<typename T>
 		void InsertData(Entity entity, T component)
 		{
 			assert(entityToIndexMap.find(entity) == entityToIndexMap.end() && "Component added to same entity more than once.");
@@ -35,7 +34,6 @@ class ComponentArray : public IComponentArray
 			++size;
 		}
 
-		template<typename T>
 		void RemoveData(Entity entity)
 		{
 			assert(entityToIndexMap.find(entity) != entityToIndexMap.end() && "Removing non-existent component.");
@@ -56,7 +54,6 @@ class ComponentArray : public IComponentArray
 			--size;
 		}
 
-		template<typename T>
 		T& GetData(Entity entity) const
 		{
 			assert(entityToIndexMap.find(entity) != entityToIndexMap.end() && "Retrieving non-existent component.");
@@ -65,7 +62,6 @@ class ComponentArray : public IComponentArray
 			return componentArray[entityToIndexMap[entity]];
 		}
 
-		template<typename T>
 		void EntityDestroyed(Entity entity)
 		{
 			if (entityToIndexMap.find(entity) != entityToIndexMap.end())

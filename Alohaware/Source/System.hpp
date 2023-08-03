@@ -15,9 +15,9 @@ class System
 	public:
 		std::set<Entity> entities;
 
-		virtual void Initialize() {};
+		virtual void Initialize() = 0;
 
-		virtual void Update(float dt) {};
+		virtual void Update(float dt) = 0;
 
-		virtual void Shutdown() {};
+		virtual void Shutdown() = 0;
 };

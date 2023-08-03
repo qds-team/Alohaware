@@ -3,15 +3,13 @@
  * @brief		EntityManager Definition
 !*/
 
-
 #pragma once
 
 #include <iostream>
 #include <queue>
 #include <array>
 #include "Entity.hpp"
-#include <cassert>  
-
+#include <cassert>
 
 class EntityManager
 {

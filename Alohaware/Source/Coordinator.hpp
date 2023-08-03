@@ -88,13 +88,33 @@ class Coordinator
 			systemManager->SetSignature<T>(signature);
 		}
 
-		void Update(const float& dt)
+		void InitializeSystems()
 		{
-			auto systemMap = systemManager->getSystems();
+			auto systemMap = systemManager->GetSystems();
+
+			for (auto system : systemMap)
+			{
+				system.second->Initialize();
+			}
+		}
+
+		void UpdateSystems(const float& dt)
+		{
+			auto systemMap = systemManager->GetSystems();
 
 			for (auto system : systemMap)
 			{
 				system.second->Update(dt);
+			}
+		}
+
+		void ShutdownSystems()
+		{
+			auto systemMap = systemManager->GetSystems();
+
+			for (auto system : systemMap)
+			{
+				system.second->Shutdown();
 			}
 		}
 
