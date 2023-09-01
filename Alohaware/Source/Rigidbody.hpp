@@ -5,7 +5,13 @@
 
 class Rigidbody
 {
-	float mass;
-	glm::vec3 velocity;
-	glm::vec3 acceleration;
+	public:
+		float gravity;
+		bool hasGravity;
+
+		float mass;
+		glm::vec3 velocity;
+		glm::vec3 acceleration;
+
+
 };

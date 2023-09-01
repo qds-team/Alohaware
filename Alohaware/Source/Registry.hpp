@@ -26,7 +26,7 @@ void RegisterComponents(Coordinator& coordinator)
 // System Registry
 void RegisterSystems(Coordinator& coordinator)
 {
-	auto systemPointer = coordinator.RegisterSystem<PhysicsSystem>();
+	//auto systemPointer = coordinator.RegisterSystem<PhysicsSystem>();
 }
 
 // Registers all necessary Components and Systems

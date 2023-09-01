@@ -81,7 +81,10 @@
     <ClInclude Include="Source\Transform.hpp">
       <Filter>Source Files\Components</Filter>
     </ClInclude>
-    <ClInclude Include="Source\PhysicsSystem.hpp">
+    <ClInclude Include="Source\CollisionSystem.hpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GraphicsSystem.hpp">
       <Filter>Source Files\Systems</Filter>
     </ClInclude>
   </ItemGroup>
@@ -89,7 +92,10 @@
     <ClCompile Include="Source\Main.cpp">
       <Filter>Source Files\Main</Filter>
     </ClCompile>
-    <ClCompile Include="Source\PhysicsSystem.cpp">
+    <ClCompile Include="Source\CollisionSystem.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GraphicsSystem.cpp">
       <Filter>Source Files\Systems</Filter>
     </ClCompile>
   </ItemGroup>
