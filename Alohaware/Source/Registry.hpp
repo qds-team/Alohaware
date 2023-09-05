@@ -11,7 +11,7 @@
 #include "Rigidbody.hpp"
 #include "Transform.hpp"
 
-#include "PhysicsSystem.hpp"
+#include "GraphicsSystem.hpp"
 
 #pragma once
 
@@ -26,7 +26,7 @@ void RegisterComponents(Coordinator& coordinator)
 // System Registry
 void RegisterSystems(Coordinator& coordinator)
 {
-	//auto systemPointer = coordinator.RegisterSystem<PhysicsSystem>();
+	auto systemPointer = coordinator.RegisterSystem<GraphicsSystem>();
 }
 
 // Registers all necessary Components and Systems

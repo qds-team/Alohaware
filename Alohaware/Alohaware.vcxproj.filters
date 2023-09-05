@@ -22,15 +22,6 @@
     <Filter Include="Source Files\ECS\Managers">
       <UniqueIdentifier>{76152d41-b083-432f-a8b9-e172d65e1542}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\ECS\Managers\ComponentManager">
-      <UniqueIdentifier>{506d3417-c434-4918-8c61-cb1e34808930}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\ECS\Managers\EntityManager">
-      <UniqueIdentifier>{ef05068b-80d6-4936-a84e-7459cb47ee71}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\ECS\Managers\SystemManager">
-      <UniqueIdentifier>{e1fc7541-385b-4238-aa44-78a4d8a561f0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ECS\ECS">
       <UniqueIdentifier>{0fc42f7c-12b5-4f1b-8602-38750bf83ef0}</UniqueIdentifier>
     </Filter>
@@ -46,17 +37,11 @@
     <Filter Include="Source Files\Systems">
       <UniqueIdentifier>{5b8e8009-aa76-4614-a405-4fefa329cc71}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{0fd7de89-212d-4840-9cb1-8863b8349ca0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\EntityManager.hpp">
-      <Filter>Source Files\ECS\Managers\EntityManager</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\ComponentManager.hpp">
-      <Filter>Source Files\ECS\Managers\ComponentManager</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\SystemManager.hpp">
-      <Filter>Source Files\ECS\Managers\SystemManager</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Coordinator.hpp">
       <Filter>Source Files\ECS\Managers\Coordinator</Filter>
     </ClInclude>
@@ -87,6 +72,18 @@
     <ClInclude Include="Source\GraphicsSystem.hpp">
       <Filter>Source Files\Systems</Filter>
     </ClInclude>
+    <ClInclude Include="Source\ComponentManager.hpp">
+      <Filter>Source Files\ECS\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EntityManager.hpp">
+      <Filter>Source Files\ECS\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SystemManager.hpp">
+      <Filter>Source Files\ECS\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Window.hpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp">
@@ -97,6 +94,9 @@
     </ClCompile>
     <ClCompile Include="Source\GraphicsSystem.cpp">
       <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Window.cpp">
+      <Filter>Source Files\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

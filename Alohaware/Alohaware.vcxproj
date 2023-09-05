@@ -22,6 +22,7 @@
     <ClCompile Include="Source\CollisionSystem.cpp" />
     <ClCompile Include="Source\GraphicsSystem.cpp" />
     <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\CollisionSystem.hpp" />
@@ -37,6 +38,7 @@
     <ClInclude Include="Source\SystemManager.hpp" />
     <ClInclude Include="Source\Registry.hpp" />
     <ClInclude Include="Source\Transform.hpp" />
+    <ClInclude Include="Source\Window.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -90,6 +92,18 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <SourcePath>C:\Users\rishi\OneDrive\Desktop\Alohaware\Alohaware\Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <SourcePath>C:\Users\rishi\OneDrive\Desktop\Alohaware\Alohaware\Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <SourcePath>C:\Users\rishi\OneDrive\Desktop\Alohaware\Alohaware\Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <SourcePath>C:\Users\rishi\OneDrive\Desktop\Alohaware\Alohaware\Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
