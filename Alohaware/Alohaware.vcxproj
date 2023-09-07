@@ -25,6 +25,7 @@
     <ClCompile Include="Source\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Source\CollisionSystem.hpp" />
     <ClInclude Include="Source\Component.hpp" />
     <ClInclude Include="Source\ComponentManager.hpp" />
@@ -39,6 +40,16 @@
     <ClInclude Include="Source\Registry.hpp" />
     <ClInclude Include="Source\Transform.hpp" />
     <ClInclude Include="Source\Window.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\compile.bat" />
+    <None Include="Shaders\simple_shader.frag" />
+    <None Include="Shaders\simple_shader.frag.spv" />
+    <None Include="Shaders\simple_shader.vert" />
+    <None Include="Shaders\simple_shader.vert.spv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Alohaware.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
