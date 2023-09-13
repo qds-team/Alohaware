@@ -3,15 +3,15 @@
  * @brief		System Definition
 !*/
 
-
 #pragma once
 
 #include <set>
 #include "Entity.hpp"
 
-
-class System
+namespace Alohaware
 {
+	class System
+	{
 	public:
 		std::set<Entity> entities;
 
@@ -20,4 +20,5 @@ class System
 		virtual void Update(float dt) = 0;
 
 		virtual void Shutdown() = 0;
-};
+	};
+}

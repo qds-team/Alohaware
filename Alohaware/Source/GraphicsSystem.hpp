@@ -3,11 +3,14 @@
 #include <iostream>
 #include "System.hpp"
 #include "Window.hpp"
+#include "AlohawarePipeline.hpp"
 
 #pragma once
 
-class GraphicsSystem : public System
+namespace Alohaware
 {
+	class GraphicsSystem : public System
+	{
 	public:
 
 		void Initialize();
@@ -21,4 +24,6 @@ class GraphicsSystem : public System
 
 	private:
 		Window window{ WIDTH, HEIGHT, "Hello Vulkan!" };
-};
+		AlohawarePipeline alohawarePipeline{ "Shaders/simple_shader.vert.spv", "Shaders/simple_shader.frag.spv" };
+	};
+}

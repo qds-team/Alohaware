@@ -3,14 +3,16 @@
  * @brief		Entitiy Definition
 !*/
 
-
 #pragma once
 
 #include "Component.hpp"
 #include <bitset>
 
-using Entity = std::uint32_t;
+namespace Alohaware
+{
+	using Entity = std::uint32_t;
 
-constexpr Entity MaxEntities = 5000;
+	constexpr Entity MaxEntities = 5000;
 
-using Signature = std::bitset<MaxEntities>;
+	using Signature = std::bitset<MaxEntities>;
+}

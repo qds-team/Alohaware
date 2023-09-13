@@ -4,8 +4,10 @@
 #include <GLFW/glfw3.h>
 #include <string>
 
-class Window
+namespace Alohaware
 {
+	class Window
+	{
 	public:
 		Window(int w, int h, std::string name);
 		~Window();
@@ -15,6 +17,8 @@ class Window
 
 		bool ShouldClose() { return glfwWindowShouldClose(window); }
 
+		void createWindowSurface(VkInstance instance, VkSurfaceKHR* surface);
+
 	private:
 		void InitializeWindow();
 
@@ -22,5 +26,6 @@ class Window
 		const int height{};
 
 		std::string windowName{};
-		GLFWwindow* window;
-};
+		GLFWwindow* window{};
+	};
+}

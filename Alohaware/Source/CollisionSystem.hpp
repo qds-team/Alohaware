@@ -3,13 +3,15 @@
 
 #pragma once
 
-class CollisionSystem : public System
+namespace Alohaware
 {
+	class CollisionSystem : public System
+	{
 	public:
 		void Initialize();
 
 		void Update(float dt);
 
 		void Shutdown();
-};
-
+	};
+}

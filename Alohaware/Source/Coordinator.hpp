@@ -11,9 +11,10 @@
 #include "Component.hpp"
 #include "SystemManager.hpp"
 
-
-class Coordinator
+namespace Alohaware
 {
+	class Coordinator
+	{
 	public:
 		void Initialize()
 		{
@@ -122,4 +123,5 @@ class Coordinator
 		std::unique_ptr<EntityManager> entityManager{};
 		std::unique_ptr<ComponentManager> componentManager{};
 		std::unique_ptr<SystemManager> systemManager{};
-};
+	};
+}

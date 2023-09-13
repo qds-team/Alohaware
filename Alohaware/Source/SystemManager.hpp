@@ -3,7 +3,6 @@
  * @brief		EntityManager Implementation
 !*/
 
-
 #pragma once
 
 #include <iostream>
@@ -11,9 +10,10 @@
 #include "System.hpp"
 #include <functional>
 
-
-class SystemManager
+namespace Alohaware
 {
+	class SystemManager
+	{
 	public:
 		template<typename T>
 		std::shared_ptr<T> RegisterSystem()
@@ -77,11 +77,12 @@ class SystemManager
 		{
 			return systems;
 		}
-		
+
 	private:
 		// Map from system type string pointer to a signature
 		std::unordered_map<const char*, Signature> signatures{};
 
 		// Map from system type string pointer to a system pointer
 		std::unordered_map<const char*, std::shared_ptr<System>> systems{};
-};
+	};
+}

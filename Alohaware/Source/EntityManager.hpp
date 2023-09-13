@@ -11,8 +11,10 @@
 #include "Entity.hpp"
 #include <cassert>
 
-class EntityManager
+namespace Alohaware
 {
+	class EntityManager
+	{
 	public:
 		EntityManager()
 		{
@@ -67,4 +69,5 @@ class EntityManager
 		std::array<Signature, MaxEntities> signatures{};
 
 		std::uint32_t aliveEntities{};
-};
+	};
+}

@@ -9,7 +9,7 @@
 
 int main()
 {
-	Coordinator coordinator;
+	Alohaware::Coordinator coordinator;
 	coordinator.Initialize();
 	Register(coordinator);
 

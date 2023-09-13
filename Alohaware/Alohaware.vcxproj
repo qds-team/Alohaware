@@ -19,13 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\AlohawarePipeline.cpp" />
     <ClCompile Include="Source\CollisionSystem.cpp" />
     <ClCompile Include="Source\GraphicsSystem.cpp" />
     <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\AlohawareDevice.cpp" />
     <ClCompile Include="Source\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\AlohawarePipeline.hpp" />
     <ClInclude Include="Source\CollisionSystem.hpp" />
     <ClInclude Include="Source\Component.hpp" />
     <ClInclude Include="Source\ComponentManager.hpp" />
@@ -34,6 +37,7 @@
     <ClInclude Include="Source\EntityManager.hpp" />
     <ClInclude Include="Source\GraphicsSystem.hpp" />
     <ClInclude Include="Source\Logger.hpp" />
+    <ClInclude Include="Source\AlohawareDevice.hpp" />
     <ClInclude Include="Source\Rigidbody.hpp" />
     <ClInclude Include="Source\System.hpp" />
     <ClInclude Include="Source\SystemManager.hpp" />
